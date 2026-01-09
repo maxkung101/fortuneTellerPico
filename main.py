@@ -8,6 +8,9 @@ addr = i2c.scan()[0]
 lcd = I2cLcd(i2c, addr, 2, 16)
 pir_sensor = Pin(15, Pin.IN)
 
+# Write your descriptions here.
+
+# First line of the description
 fortune1 = [
     "You get good    ",
     "You have a heart",
@@ -17,6 +20,7 @@ fortune1 = [
     "Watch for birds "
 ]
 
+# Second line of the description
 fortune2 = [
     "luck.",
     "of gold.",
@@ -25,6 +29,7 @@ fortune2 = [
     "winning.",
     "coming soon."
 ]
+
 def reset():
     lcd.putstr("I am a          ")
     lcd.putstr("Fortune Teller.")
